@@ -34,10 +34,10 @@ import './index.scss';
 
 // action-block__range
 
-document.querySelector('.myinput').oninput = function() {
-  var value = (this.value-this.min)/(this.max-this.min)*100
-  this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + value + '%, #fff ' + value + '%, white 100%)'
-};
+// document.querySelector('.myinput').oninput = function() {
+//   var value = (this.value-this.min)/(this.max-this.min)*100
+//   this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + value + '%, #fff ' + value + '%, white 100%)'
+// };
 
 const flSquareRange = document.querySelector('#flat-square-range');
 const flSquareInput = document.querySelector('#flat-square-input');
