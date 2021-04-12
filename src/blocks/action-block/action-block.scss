@@ -31,6 +31,7 @@ input[type=range]::-ms-track {
 
   display: flex;
   flex-direction: column;
+  max-width: 318px;
 
   &_type_toilet {
     max-width: 215px;

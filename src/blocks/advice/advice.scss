@@ -12,3 +12,10 @@
     color: #000000;
   }
 }
+
+@media (min-width: 768px) {
+  .advice {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}

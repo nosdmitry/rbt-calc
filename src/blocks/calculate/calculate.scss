@@ -77,3 +77,11 @@
     }
   }
 }
+
+
+@media (min-width: 768px) {
+  .calculate {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
