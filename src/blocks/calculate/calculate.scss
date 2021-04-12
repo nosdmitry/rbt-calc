@@ -14,10 +14,6 @@
     color: #000000;
   }
 
-  &__block {
-    
-  }
-
   &__footer {
     padding-top: 30px;
     box-sizing: border-box;
@@ -40,7 +36,7 @@
       padding: 13px 16px 0 13px;
       margin-left: -16px;
       margin-right: -16px;
-      border-radius: 0px 0px 0px 5px;
+      border-radius: 0px 0px 5px 5px;
       background-color: #347DB8;
       min-height: 92px;
       display: flex;

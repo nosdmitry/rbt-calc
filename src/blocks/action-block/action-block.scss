@@ -77,7 +77,7 @@ input[type=range]::-ms-track {
       border-radius: 50%;
       background: #ffffff;
       cursor: pointer;
-      margin-top: -10px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+      margin-top: -10px;
     }
     &[type=range]::-moz-range-thumb {
       box-sizing: border-box;
