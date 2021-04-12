@@ -24,16 +24,103 @@
 
     <section class="block block_type_left-line advice">
       <p class="advice__article">
-        Воспользуйтесь нашим кальулятором, чтобы проссчитать 
-        примерную стоимость вашего ремонта. Калькулятор считает 
-        среднюю цену на основе прайсов всех предствленных в 
-        рейтинге компаний. Не стоит доверять компаниям, 
+        Воспользуйтесь нашим кальулятором, чтобы проссчитать
+        примерную стоимость вашего ремонта. Калькулятор считает
+        среднюю цену на основе прайсов всех предствленных в
+        рейтинге компаний. Не стоит доверять компаниям,
         которые указывают цену от 1500 за квадратный метр...
       </p>
     </section>
 
     <section class="block calculate">
       <h1 class="calculate__title">Калькулятор ремонта</h1>
+
+      <div class="calculate__block action-block">
+        <label for="flat-type" class="action-block__title">Тип помещения:<span class="action-block__title-star">*</span></label>
+        <select class="action-block__select" id="flat-type">
+          <option class="action-block__select-option">test1</option>
+          <option class="action-block__select-option">test2</option>
+          <option class="action-block__select-option">test3</option>
+        </select>
+      </div>
+
+      <div class="calculate__block action-block">
+        <label for="flat-square" class="action-block__title">Площадь ремонта:<span class="action-block__title-star">*</span></label>
+        <input type="text" class="action-block__select" value="42 кв.м">
+        <input type="range" id="flat-square" class="action-block__range">
+      </div>
+
+      <div class="calculate__block action-block">
+        <label for="flat-electricity" class="action-block__title">Электрика:<span class="action-block__title-star">*</span></label>
+        <select class="action-block__select" id="flat-electricity">
+          <option class="action-block__select-option">Нет</option>
+          <option class="action-block__select-option">Да</option>
+        </select>
+      </div>
+
+      <div class="calculate__block action-block">
+        <label for="flat-common-square" class="action-block__title">Общий периметр стен:<span class="action-block__title-star">*</span></label>
+        <input type="text" id="flat-common-square" class="action-block__select" value="50 м">
+      </div>
+
+      <div class="calculate__block action-block">
+        <label for="flat-constr-type" class="action-block__title">Тип ремонта:<span class="action-block__title-star">*</span></label>
+        <select class="action-block__select" id="flat-constr-type">
+          <option class="action-block__select-option">Косметический</option>
+          <option class="action-block__select-option">Да</option>
+        </select>
+      </div>
+
+      <div class="calculate__block action-block">
+        <label for="flat-ceiling" class="action-block__title">Потолки:<span class="action-block__title-star">*</span></label>
+        <select class="action-block__select" id="flat-ceiling">
+          <option class="action-block__select-option">Нет</option>
+          <option class="action-block__select-option">Да</option>
+        </select>
+      </div>
+
+      <div class="calculate__block action-block">
+        <label for="flat-restroom" class="action-block__title">Ремонт санузла:<span class="action-block__title-star">*</span></label>
+        <select class="action-block__select" id="flat-restroom">
+          <option class="action-block__select-option">Нет</option>
+          <option class="action-block__select-option">Да</option>
+        </select>
+      </div>
+
+      <div class="calculate__block action-block action-block_type_toilet">
+        <label for="flat-restroom-square" class="action-block__title">Площадь санузла:<span class="action-block__title-star">*</span></label>
+        <input type="text" class="action-block__select" value="42 кв.м">
+        <input type="range" id="flat-restroom-square" class="action-block__range">
+      </div>
+
+      <div class="calculate__block action-block">
+        <label for="flat-floor" class="action-block__title">Теплые полы:<span class="action-block__title-star">*</span></label>
+        <select class="action-block__select" id="flat-floor">
+          <option class="action-block__select-option">Нет</option>
+          <option class="action-block__select-option" selected>Да</option>
+        </select>
+      </div>
+
+      <div class="calculate__block action-block">
+        <label for="flat-doors" class="action-block__title">Теплые полы:<span class="action-block__title-star">*</span></label>
+        <select class="action-block__select" id="flat-doors">
+          <option class="action-block__select-option">Нет</option>
+          <option class="action-block__select-option">Да</option>
+        </select>
+      </div>
+
+
+      <div class="calculate__footer">
+        <p class="calculate__footer-text">*Напоминаем, что это примерная стоимость</p>
+        <article class="calculate__footer-article-wrap">
+          <p class="calculate__footer-result-title">Стоимость вашего ремонта</p>
+          <p class="calculate__footer-result-common">Итого: 
+            <span class="calculate__footer-result-common_type_number">140 000</span>
+            <span class="calculate__footer-result-common_type_currency"> руб.</span>
+          </p>
+        </article>
+      </div>
+
     </section>
 
   </main>

@@ -1,0 +1,83 @@
+.calculate {
+  padding: 16px;
+  box-sizing: border-box;
+  display: grid;
+  row-gap: 16px;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  &__block {
+    
+  }
+
+  &__footer {
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    row-gap: 24px;
+
+
+    &-text {
+      margin: inherit;
+      padding: 0;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+    }
+
+    &-article-wrap {
+      padding: 13px 16px 0 13px;
+      margin-left: -16px;
+      margin-right: -16px;
+      border-radius: 0px 0px 0px 5px;
+      background-color: #347DB8;
+      min-height: 92px;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+    }
+
+    &-result{
+      &-title {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+        text-align: center;
+      }
+      &-common {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        &_type {
+          &_number {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+          }
+          &_currency {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
