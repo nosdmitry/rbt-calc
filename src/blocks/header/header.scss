@@ -43,7 +43,42 @@
 
   &__search-form {
     display: none;
+    width: 50%;
+    position: absolute;
+    //display: flex;
+    top: 6px;
+    right: 16px;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    &-submit {
+      border: none;
+      max-width: 32px;
+      height: 32px;
+      width: 100%;
+      background: url(../../images/search.svg) center no-repeat;
+      border: 1px solid #347DB8;
+      border-radius: 3px 0 0 3px;
+    }
+    &-input {
+      width: 100%;
+      border: none;
+      border: 1px solid #347DB8;
+      border-radius: 0 3px 3px 0;      
+    }
+    &-close {
+      position: absolute;
+      top: calc(50% - 12px);
+      right: 4px;
+      width: 24px;
+      height: 24px;
+      background: url(../../images/search-close.svg) #F3F4F8 center no-repeat;
+      border-radius: 3px;
+      border: none;      
+    }
+
   }
+
   &__add-company-button {
     display: none;
     margin: 0;
@@ -84,6 +119,9 @@
     }
 
     &__search-form {
+      top: 0;
+      right: 0;
+      position: relative;
       display: flex;
       align-items: center;
       justify-self: flex-end;
@@ -114,6 +152,10 @@
         color: #717171;
         min-width: 280px;
         width: 100%;
+      }
+
+      &-close {
+        display: none;
       }
     }
   }
