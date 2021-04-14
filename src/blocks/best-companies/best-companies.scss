@@ -1,9 +1,10 @@
-.best-componies {
+.best-companies {
   display: none;
+  max-width: 407px;
 }
 
 @media (min-width: 768px) {
-  .best-componies {
+  .best-companies {
     padding: 20px 10px;
     grid-column: 2;
     grid-row: span 2;

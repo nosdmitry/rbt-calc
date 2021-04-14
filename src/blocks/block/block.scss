@@ -3,6 +3,8 @@
   background-color: #fff;
 
   &_type_left-line {
+    box-sizing: border-box;
+    max-width: 843px;
     position: relative;
 
     &:before {
