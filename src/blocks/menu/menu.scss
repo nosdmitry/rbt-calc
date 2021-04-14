@@ -59,3 +59,42 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .menu {
+    grid-column: span 3;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    position: inherit;
+    flex-direction: row;
+    margin-top: 5px;
+    border-top: 1px solid #F3F4F8;
+    &__logo, &__close-button, &__add-company-button {
+      display: none;
+    }
+    &__item {
+      padding: 9px 42px 9px 42px;
+      border: none;
+      border-right: 1px solid #F3F4F8;
+      &:first-of-type {
+        padding-left: 0;
+        border-left: none;
+      }
+      &:last-of-type {
+        padding-right: 0;
+        border-right: none;
+      }
+
+      // border-top: 1px solid #F3F4F8;
+      // border-left: 1px solid #F3F4F8;
+      // :last-of-type {
+      //   border-right: 1px solid #F3F4F8;
+      // }
+    }
+    &__link {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
