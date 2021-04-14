@@ -9,10 +9,16 @@
 @media (min-width: 768px) {
   .main {
     padding: 20px 24px 24px 24px;
-    grid-template-columns: minmax(320px, 843px) auto;
+    grid-template-columns: minmax(320px, 843px) 162px;
     grid-template-rows: auto auto;
     column-gap: 24px;
     row-gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    grid-template-columns: minmax(320px, 843px) auto;
   }
 }
 
