@@ -1,4 +1,5 @@
 .header {
+  margin: 0 auto;
   box-sizing: border-box;
   background-color: #fff;
   padding: 6px 16px;
@@ -7,6 +8,8 @@
   grid-template-columns: auto repeat(2, 32px);
   align-items: center;
   position: relative;
+  max-width: 1280px;
+
 
   &__logo {
     margin: 0;
@@ -41,11 +44,12 @@
     }
   }
 
+
+
   &__search-form {
     display: none;
     width: 50%;
     position: absolute;
-    //display: flex;
     top: 6px;
     right: 16px;
     box-sizing: border-box;
@@ -93,6 +97,10 @@
     text-align: center;
     color: #FFFFFF;
     border: none;
+  }
+
+  &__search-form_type_visible {
+    display: flex;
   }
 }
 

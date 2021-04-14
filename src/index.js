@@ -49,6 +49,35 @@ const constructionType = document.querySelector('#flat-constr-type');
 const total = document.querySelector('.calculate__footer-result-common_type_number');
 
 
+const menuButton = document.querySelector('.header__button_type_menu');
+const menuCloseButton = document.querySelector('.menu__close-button');
+const menuContainer = document.querySelector('.menu');
+
+const searchButton = document.querySelector('.header__button_type_search');
+const searchMobileForm = document.querySelector('.header__search-form');
+const searchFormClose = document.querySelector('.header__search-form-close');
+
+
+
+searchFormClose.addEventListener('click', () => {
+  searchMobileForm.classList.remove('header__search-form_type_visible');
+});
+
+searchButton.addEventListener('click', () => {
+  searchMobileForm.classList.add('header__search-form_type_visible');
+})
+
+menuCloseButton.addEventListener('click', () => {
+  menuContainer.classList.add('menu_type_hidden');
+})
+
+menuButton.addEventListener('click', () => {
+  menuContainer.classList.toggle('menu_type_hidden');
+});
+
+
+
+
 
 flSquareRange.addEventListener('input', (evt) => {
   showResult();
@@ -72,8 +101,8 @@ function totalCount() {
 
   const result 
     = (Number(flSquareRange.value) * Number(flatType.value)) // Тип помещения (+8500 / +6500 за м кв)
-    + (Number(flatElectricity.value) * Number(flSquareRange.value))
-    + (Number(constructionType.value) * Number(flSquareRange.value));
+    + (Number(flatElectricity.value) * Number(flSquareRange.value)) // Электрика (+300 / +600)
+    + (Number(constructionType.value) * Number(flSquareRange.value)); // Тип ремонта (+1500 / +3000)
 
     // + Number(restRoomSquareRange.value)
 

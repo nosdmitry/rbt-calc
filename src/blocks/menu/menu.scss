@@ -1,5 +1,5 @@
 .menu {
-  margin-top: -200%;
+  margin-top: 0;
   padding: 42px 16px 59px 16px;
   position: absolute;
   top: 0;
@@ -57,6 +57,10 @@
       max-width: 18px;
       height: 18px;
     }
+  }
+
+  &_type_hidden {
+    margin-top: -200%;
   }
 }
 
