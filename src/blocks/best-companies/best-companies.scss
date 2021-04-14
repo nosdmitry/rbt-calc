@@ -69,7 +69,66 @@
         display: flex;
         align-items: center;
         color: #4496F6;
+
+        &-text {
+          display: none;
+        }
       }
     }
   }
+}
+
+
+@media (min-width: 1024px) {
+  .best-companies {
+    &__list {
+      column-gap: 12px;
+      grid-template-columns: 42px minmax(100px, 208px) 85px;
+    }
+    &__title {
+    margin: 0 auto;
+    max-width: 224px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+    }
+
+    &__company {
+      
+      &-img {
+        background-size: cover;
+        max-width: 100%;
+      }
+      &-name {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .best-companies {
+    &__title {
+      grid-column: span 3;
+    }
+    &__company {
+      &-img {
+        grid-column: 1;
+      }
+      &-name {
+        grid-column: 2;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      &-score-text {
+        text-align: center;
+        padding-left: 5px;
+        font-weight: normal;
+        display: block;
+        color: black;
+      }
+    }
+  }
+
 }

@@ -9,7 +9,7 @@
 @media (min-width: 768px) {
   .main {
     padding: 20px 24px 24px 24px;
-    grid-template-columns: 1fr 24%;
+    grid-template-columns: minmax(320px, 843px) auto;
     grid-template-rows: auto auto;
     column-gap: 24px;
     row-gap: 24px;
