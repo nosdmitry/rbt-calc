@@ -6,6 +6,7 @@
   column-gap: 16px;
   grid-template-columns: auto repeat(2, 32px);
   align-items: center;
+  position: relative;
 
   &__logo {
     margin: 0;
@@ -45,6 +46,18 @@
   }
   &__add-company-button {
     display: none;
+    margin: 0;
+    padding: 9px 0;
+    background: #4496F6;
+    border-radius: 4px;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
   }
 }
 
@@ -113,19 +126,7 @@
       display: none;
     }
     &__add-company-button {
-      margin: 0;
-      padding: 9px 0;
       display: flex;
-      background: #4496F6;
-      border-radius: 4px;
-      justify-content: center;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 19px;
-      text-align: center;
-      color: #FFFFFF;
-      border: none;
     }
   }
 }

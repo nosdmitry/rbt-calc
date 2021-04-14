@@ -18,13 +18,29 @@
       <button class="header__search-form-submit" aria-label="Искать"></button>
       <input class="header__search-form-input" type="text" placeholder="Введите название компании...">
     </form>
-    
+
 
     <div class="header__button header__button_type_search"></div>
 
     <div class="header__button header__button_type_menu"></div>
 
     <button class="header__add-company-button" aria-label="Добавить компанию">Добавить компанию +</button>
+
+    <ul class="header__menu menu">
+      <button class="close-button menu__close-button" aria-label="Закрыть меню"></button>
+      <a class="header__logo menu__logo" href="./index.html"></a>
+      <button class="header__add-company-button menu__add-company-button" aria-label="Добавить компанию">Добавить компанию +</button>
+      <li class="menu__item"><a href="#" class="menu__link">Ремонт квартир</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Дизайн интерьеров</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Карта компаний</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Последние отзывы</a></li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">
+          <img src="<%=require('./images/menu-img.svg')%>" class="menu__link-icon">
+          Калькулятор ремонта
+        </a>
+      </li>
+    </ul>
 
 
 
@@ -51,52 +67,62 @@
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
         <li class="best-companies__list">
           <div class="best-companies__company-img"></div>
           <p class="best-companies__company-name">Строй Комплект Сервис</p>
-          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span></p>
+          <p class="best-companies__company-score">2700 <span class="best-companies__company-score-text">баллов</span>
+          </p>
         </li>
       </ul>
     </section>
@@ -108,7 +134,8 @@
       <h1 class="calculate__title">Калькулятор ремонта</h1>
 
       <div class="calculate__block action-block">
-        <label for="flat-type" class="action-block__title">Тип помещения:<span class="action-block__title-star">*</span></label>
+        <label for="flat-type" class="action-block__title">Тип помещения:<span
+            class="action-block__title-star">*</span></label>
         <select class="action-block__select" id="flat-type">
           <option class="action-block__select-option" value="8500">Вторичка (8500) за кв м</option>
           <option class="action-block__select-option" value="6000">Новостройка (6000) за кв м</option>
@@ -116,37 +143,32 @@
       </div>
 
       <div class="calculate__block action-block">
-        <label for="flat-square" class="action-block__title">Площадь ремонта:<span class="action-block__title-star">*</span></label>
-        <input 
-          id="flat-square-input" 
-          type="text" 
-          class="action-block__select" 
-          value="42 кв.м">
-        <input 
-          type="range" 
-          id="flat-square-range" 
-          class="action-block__range"
-          min="1"
-          max="100"
-          value="42">
+        <label for="flat-square" class="action-block__title">Площадь ремонта:<span
+            class="action-block__title-star">*</span></label>
+        <input id="flat-square-input" type="text" class="action-block__select" value="42 кв.м">
+        <input type="range" id="flat-square-range" class="action-block__range" min="1" max="100" value="42">
       </div>
 
       <div class="calculate__block action-block">
-        <label for="flat-electricity" class="action-block__title">Электрика:<span class="action-block__title-star">*</span></label>
+        <label for="flat-electricity" class="action-block__title">Электрика:<span
+            class="action-block__title-star">*</span></label>
         <select class="action-block__select" id="flat-electricity">
           <option class="action-block__select-option" value="0">Нет</option>
-          <option class="action-block__select-option" value="300">Частичная замена и подключение (+300 * площадь)</option>
+          <option class="action-block__select-option" value="300">Частичная замена и подключение (+300 * площадь)
+          </option>
           <option class="action-block__select-option" value="600">Новая от вводного кабеля (+600 * площадь)</option>
         </select>
       </div>
 
       <div class="calculate__block action-block">
-        <label for="flat-common-square" class="action-block__title">Общий периметр стен:<span class="action-block__title-star">*</span></label>
+        <label for="flat-common-square" class="action-block__title">Общий периметр стен:<span
+            class="action-block__title-star">*</span></label>
         <input type="text" id="flat-common-square" class="action-block__select" value="50 м">
       </div>
 
       <div class="calculate__block action-block">
-        <label for="flat-constr-type" class="action-block__title">Тип ремонта:<span class="action-block__title-star">*</span></label>
+        <label for="flat-constr-type" class="action-block__title">Тип ремонта:<span
+            class="action-block__title-star">*</span></label>
         <select class="action-block__select" id="flat-constr-type">
           <option class="action-block__select-option" value="0">Косметический (+0)</option>
           <option class="action-block__select-option" selected value="3000">Дизайнерский (+3000) за кв м</option>
@@ -155,7 +177,8 @@
       </div>
 
       <div class="calculate__block action-block">
-        <label for="flat-ceiling" class="action-block__title">Потолки:<span class="action-block__title-star">*</span></label>
+        <label for="flat-ceiling" class="action-block__title">Потолки:<span
+            class="action-block__title-star">*</span></label>
         <select class="action-block__select" id="flat-ceiling">
           <option class="action-block__select-option" value="0">Нет</option>
           <option class="action-block__select-option" value="300">Гипсокартон (+300) за кв м</option>
@@ -165,7 +188,8 @@
       </div>
 
       <div class="calculate__block action-block">
-        <label for="flat-restroom" class="action-block__title">Ремонт санузла:<span class="action-block__title-star">*</span></label>
+        <label for="flat-restroom" class="action-block__title">Ремонт санузла:<span
+            class="action-block__title-star">*</span></label>
         <select class="action-block__select" id="flat-restroom">
           <option class="action-block__select-option">Нет</option>
           <option class="action-block__select-option" value="13000">Да</option>
@@ -173,19 +197,15 @@
       </div>
 
       <div class="calculate__block action-block action-block_type_toilet">
-        <label for="flat-restroom-square" class="action-block__title">Площадь санузла:<span class="action-block__title-star">*</span></label>
+        <label for="flat-restroom-square" class="action-block__title">Площадь санузла:<span
+            class="action-block__title-star">*</span></label>
         <input type="text" class="action-block__select" value="42 кв.м">
-        <input 
-          type="range" 
-          id="flat-restroom-square" 
-          class="action-block__range"
-          min="1"
-          max="20"
-          value="3">
+        <input type="range" id="flat-restroom-square" class="action-block__range" min="1" max="20" value="3">
       </div>
 
       <div class="calculate__block action-block">
-        <label for="flat-floor" class="action-block__title">Теплые полы:<span class="action-block__title-star">*</span></label>
+        <label for="flat-floor" class="action-block__title">Теплые полы:<span
+            class="action-block__title-star">*</span></label>
         <select class="action-block__select" id="flat-floor">
           <option class="action-block__select-option">Нет</option>
           <option class="action-block__select-option" selected value="200">Да</option>
@@ -193,7 +213,8 @@
       </div>
 
       <div class="calculate__block action-block action-block_type_doors">
-        <label for="flat-doors" class="action-block__title">Двери:<span class="action-block__title-star">*</span></label>
+        <label for="flat-doors" class="action-block__title">Двери:<span
+            class="action-block__title-star">*</span></label>
         <select class="action-block__select" id="flat-doors">
           <option class="action-block__select-option">Нет</option>
           <option class="action-block__select-option" value="8500">Да</option>
@@ -215,7 +236,7 @@
         <p class="calculate__footer-text">*Напоминаем, что это примерная стоимость</p>
         <article class="calculate__footer-article-wrap">
           <p class="calculate__footer-result-title">Стоимость вашего ремонта</p>
-          <p class="calculate__footer-result-common">Итого: 
+          <p class="calculate__footer-result-common">Итого:
             <span class="calculate__footer-result-common_type_number"> 140 000</span>
             <span class="calculate__footer-result-common_type_currency"> руб.</span>
           </p>

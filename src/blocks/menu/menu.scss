@@ -1,0 +1,61 @@
+.menu {
+  margin-top: -200%;
+  padding: 42px 16px 59px 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+  background-color: #fff;
+  list-style: none;
+  &__close-button {
+    position: absolute;
+    top: 6px;
+    right: 16px;
+    
+  }
+  &__logo {
+    padding: 0;
+    margin: 0;
+    max-width: 209px;
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+  }
+  &__add-company-button {
+    display: block;
+    margin: 11px 0 20px 0;
+    max-width: 209px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__item {
+    padding: 24px 0;
+    border-bottom: 1px solid #F3F4F8;
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: .6;
+    }
+  }
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #161616;
+    text-decoration: none;
+    display: flex;
+
+    
+    &-icon {
+      margin-right: 12px;
+      width: 100%;
+      max-width: 18px;
+      height: 18px;
+    }
+  }
+}
