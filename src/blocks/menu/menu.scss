@@ -12,6 +12,7 @@
   box-sizing: border-box;
   background-color: #fff;
   list-style: none;
+  transition: transform .3s ease-out;
   &__close-button {
     position: absolute;
     top: 6px;
@@ -60,8 +61,10 @@
   }
 
   &_type_hidden {
-    margin-top: -200%;
+    //margin-top: -200%;
+    transform: translateY(-200%);
   }
+
 }
 
 @media (min-width: 1024px) {
