@@ -6,7 +6,6 @@ import { menuButton, menuCloseButton, menuContainer, searchButton,
   constructionType, flatCeilings, flatFloor, flatDoors, flatEntranceDoor, flatEntranceDoorConfirm, total
 } from './utils/constants';
 
-
 function totalCount() {  
 
   let result 
@@ -16,7 +15,7 @@ function totalCount() {
     + (Number(flatRestRoom.value) * Number(flatRestRoomSquareRange.value)) // Санузел (+13000 * S санузла)
     + (Number(flatCeilings.value) * Number(flSquareRange.value)) // Потолки (+300 || +450 || +600 * S)
     + (Number(flatFloor.value) * Number(flSquareRange.value)) // Полы (+200 * S)
-    + (Number(flatDoors.value) *8500); // Двери (+8500 шт)
+    + (Number(flatDoors.value) * 8500); // Двери (+8500 шт)
 
     flatEntranceDoor.checked ? result += result / 100 * 5 : result; // Входная дверь +5% от общей суммы
 

@@ -98,8 +98,7 @@
 @media (min-width: 1024px) {
   .calculate {
 
-    //grid-column: auto auto;
-    grid-template-columns: repeat(2, minmax(250px, 318px));
+    grid-template-columns: repeat(2, minmax(200px, 318px));
 
     &__title {
       grid-column: span 2;
