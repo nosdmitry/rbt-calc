@@ -41,14 +41,22 @@ import './index.scss';
 
 const flSquareRange = document.querySelector('#flat-square-range');
 const flSquareInput = document.querySelector('#flat-square-input');
-const restRoomSquareRange = document.querySelector('#flat-restroom-square');
+const flatRestRoom = document.querySelector('#flat-restroom');
+const flatRestRoomSquareRange = document.querySelector('#flat-restroom-square-range');
+const flatRestRoomSquareInput = document.querySelector('#flat-restroom-square-input');
 const flatType = document.querySelector('#flat-type');
 const flatElectricity = document.querySelector('#flat-electricity');
 const constructionType = document.querySelector('#flat-constr-type');
+const flatCeilings = document.querySelector('#flat-ceiling');
+const flatFloor = document.querySelector('#flat-floor');
+const flatDoors = document.querySelector('#flat-doors');
+const flatEntranceDoor = document.querySelector('#flat-entrance-door');
+const flatEntranceDoorConfirm = document.querySelector('.action-block__switch_type_confirm');
 
 const total = document.querySelector('.calculate__footer-result-common_type_number');
 
 
+/* menu */
 const menuButton = document.querySelector('.header__button_type_menu');
 const menuCloseButton = document.querySelector('.menu__close-button');
 const menuContainer = document.querySelector('.menu');
@@ -56,6 +64,36 @@ const menuContainer = document.querySelector('.menu');
 const searchButton = document.querySelector('.header__button_type_search');
 const searchMobileForm = document.querySelector('.header__search-form');
 const searchFormClose = document.querySelector('.header__search-form-close');
+
+
+/* menu */
+
+
+
+function totalCount() {  
+
+  let result 
+    = (Number(flatType.value) * Number(flSquareRange.value)) // Тип помещения (+8500 || +6500 * S)
+    + (Number(flatElectricity.value) * Number(flSquareRange.value)) // Электрика (+300 || +600 * S)
+    + (Number(constructionType.value) * Number(flSquareRange.value)) // Тип ремонта (+1500 || +3000 * S)
+    + (Number(flatRestRoom.value) * Number(flatRestRoomSquareRange.value)) // Санузел (+13000 * S санузла)
+    + (Number(flatCeilings.value) * Number(flSquareRange.value)) // Потолки (+300 || +450 || +600 * S)
+    + (Number(flatFloor.value) * Number(flSquareRange.value)) // Полы (+200 * S)
+    + (Number(flatDoors.value) *8500); // Двери (+8500 шт)
+
+    flatEntranceDoor.checked ? result += result / 100 * 5 : result; // Входная дверь +5% от общей суммы
+
+    return result;
+}
+
+function showResult() {
+  const result = totalCount();
+  total.textContent = numberWithSpaces(result);
+}
+
+function numberWithSpaces(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
 
 
 
@@ -77,8 +115,23 @@ menuButton.addEventListener('click', () => {
 
 
 
-
-
+flatRestRoom.addEventListener('input', showResult);
+flatType.addEventListener('input', showResult);
+flatElectricity.addEventListener('input', showResult);
+constructionType.addEventListener('input', showResult);
+flatCeilings.addEventListener('input', showResult);
+flatFloor.addEventListener('input', showResult);
+flatDoors.addEventListener('input', showResult);
+flatEntranceDoor.addEventListener('input', (evt) => {
+  evt.target.setAttribute('checked', false);
+  if(flatEntranceDoor.checked) {
+    flatEntranceDoorConfirm.textContent = "Да";
+    showResult();
+  } else {
+    flatEntranceDoorConfirm.textContent = "Нет";
+    showResult();
+  }
+});
 flSquareRange.addEventListener('input', (evt) => {
   showResult();
   flSquareInput.value = evt.target.value;
@@ -87,36 +140,15 @@ flSquareInput.addEventListener('input', (evt) => {
   showResult();
   flSquareRange.value = evt.target.value;
 });
-restRoomSquareRange.addEventListener('input', showResult);
-flatType.addEventListener('input', showResult);
-flatElectricity.addEventListener('input', showResult);
-constructionType.addEventListener('input', showResult);
-
-function totalCount() {
-  console.log('flat sqaure', Number(flSquareRange.value));
-  console.log('flatType', Number(flatType.value));
-  console.log('toilet sqaure', Number(restRoomSquareRange.value));
-  console.log('constr type', Number(constructionType.value) * Number(flSquareRange.value));
+flatRestRoomSquareInput.addEventListener('input', (evt) => {
+  showResult();
+  flatRestRoomSquareRange.value = evt.target.value;
+});
+flatRestRoomSquareRange.addEventListener('input', (evt) => {
+  showResult();
+  flatRestRoomSquareInput.value = evt.target.value;
+});
 
 
-  const result 
-    = (Number(flSquareRange.value) * Number(flatType.value)) // Тип помещения (+8500 / +6500 за м кв)
-    + (Number(flatElectricity.value) * Number(flSquareRange.value)) // Электрика (+300 / +600)
-    + (Number(constructionType.value) * Number(flSquareRange.value)); // Тип ремонта (+1500 / +3000)
-
-    // + Number(restRoomSquareRange.value)
-
-    return result;
-}
-
-function showResult() {
-  const result = totalCount();
-  total.textContent = numberWithSpaces(result);
-}
-
-
-function numberWithSpaces(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-}
 
 showResult();
