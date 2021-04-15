@@ -10,37 +10,40 @@
 
 <body class="body">
 
-  <header class="header">
+  <header class="header-wrap">
+    
+    <div class="header">
 
-    <a class="header__logo" href="./index.html"></a>
+      <a class="header__logo" href="./index.html"></a>
 
-    <form class="header__search-form header__search-form_type_mobile">
-      <button type="submit" class="header__search-form-submit" aria-label="Искать"></button>
-      <button type="button" class="header__search-form-close" aria-label="Закрыть форму"></button>
-      <input class="header__search-form-input" type="text" placeholder="Введите название компании...">
-    </form>
+      <form class="header__search-form header__search-form_type_mobile">
+        <button type="submit" class="header__search-form-submit" aria-label="Искать"></button>
+        <button type="button" class="header__search-form-close" aria-label="Закрыть форму"></button>
+        <input class="header__search-form-input" type="text" placeholder="Введите название компании...">
+      </form>
 
-    <div class="header__button header__button_type_search"></div>
+      <div class="header__button header__button_type_search"></div>
 
-    <div class="header__button header__button_type_menu"></div>
+      <div class="header__button header__button_type_menu"></div>
 
-    <button class="header__add-company-button" aria-label="Добавить компанию">Добавить компанию +</button>
+      <button class="header__add-company-button" aria-label="Добавить компанию">Добавить компанию +</button>
 
-    <ul class="header__menu menu menu_type_hidden">
-      <button class="close-button menu__close-button" aria-label="Закрыть меню"></button>
-      <a class="header__logo menu__logo" href="./index.html"></a>
-      <button class="header__add-company-button menu__add-company-button" aria-label="Добавить компанию">Добавить компанию +</button>
-      <li class="menu__item"><a href="#" class="menu__link">Ремонт квартир</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Дизайн интерьеров</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Карта компаний</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Последние отзывы</a></li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">
-          <img src="<%=require('./images/menu-img.svg')%>" class="menu__link-icon">
-          Калькулятор ремонта
-        </a>
-      </li>
-    </ul>
+      <ul class="header__menu menu menu_type_hidden">
+        <button class="close-button menu__close-button" aria-label="Закрыть меню"></button>
+        <a class="header__logo menu__logo" href="./index.html"></a>
+        <button class="header__add-company-button menu__add-company-button" aria-label="Добавить компанию">Добавить компанию +</button>
+        <li class="menu__item"><a href="#" class="menu__link">Ремонт квартир</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Дизайн интерьеров</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Карта компаний</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Последние отзывы</a></li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            <img src="<%=require('./images/menu-img.svg')%>" class="menu__link-icon">
+            Калькулятор ремонта
+          </a>
+        </li>
+      </ul>
+    </div>
 
   </header>
 
