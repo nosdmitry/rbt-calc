@@ -74,6 +74,8 @@
     margin: 0;
     padding: 0;
     position: inherit;
+    transition: transform 0s linear;
+    transform: translateY(0);
     flex-direction: row;
     margin-top: 5px;
     border-top: 1px solid #F3F4F8;
