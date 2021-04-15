@@ -38,6 +38,10 @@ input[type=range]::-ms-track {
     max-width: 215px;
   }
 
+  &_type_hidden {
+    display: none;
+  }
+
   &_type_switch {
     display: none;
   }

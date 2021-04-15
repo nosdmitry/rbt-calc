@@ -1,7 +1,7 @@
 import './index.scss';
 
 import { menuButton, menuCloseButton, menuContainer, searchButton, 
-  searchMobileForm, searchFormClose, flSquareRange, flSquareInput, 
+  searchMobileForm, searchFormClose, flSquareRange, flSquareInput, flatRestRoomRangeBlock, 
   flatRestRoom, flatRestRoomSquareRange, flatRestRoomSquareInput, flatType, flatElectricity, 
   constructionType, flatCeilings, flatFloor, flatDoors, flatEntranceDoor, flatEntranceDoorConfirm, total
 } from './utils/constants';
@@ -49,7 +49,15 @@ menuButton.addEventListener('click', () => {
   menuContainer.classList.toggle('menu_type_hidden');
 });
 
-flatRestRoom.addEventListener('input', showResult);
+flatRestRoom.addEventListener('input', (evt) => {
+  if(evt.target.value != '0') {
+    showResult();
+    flatRestRoomRangeBlock.classList.remove('action-block_type_hidden');
+  } else {
+    flatRestRoomRangeBlock.classList.add('action-block_type_hidden');
+    showResult();
+  }
+});
 flatType.addEventListener('input', showResult);
 flatElectricity.addEventListener('input', showResult);
 constructionType.addEventListener('input', showResult);

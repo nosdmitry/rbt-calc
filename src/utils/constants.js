@@ -14,6 +14,7 @@ export const flSquareInput = document.querySelector('#flat-square-input');
 export const flatRestRoom = document.querySelector('#flat-restroom');
 export const flatRestRoomSquareRange = document.querySelector('#flat-restroom-square-range');
 export const flatRestRoomSquareInput = document.querySelector('#flat-restroom-square-input');
+export const flatRestRoomRangeBlock = document.querySelector('.action-block_type_toilet');
 export const flatType = document.querySelector('#flat-type');
 export const flatElectricity = document.querySelector('#flat-electricity');
 export const constructionType = document.querySelector('#flat-constr-type');
